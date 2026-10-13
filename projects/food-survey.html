@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Survey Form</title>
+    <link rel="stylesheet" href="project-style.css">
+</head>
+<body>
+    <main class="page">
+        <a class="back-link" href="../projects.html">← Back to Projects</a>
+
+        <section class="panel">
+            <h1>Food Survey Form</h1>
+            <p class="intro">A small survey about food preferences.</p>
+
+            <form>
+                <div class="form-row">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+
+                <div class="form-row">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="1">
+                </div>
+
+                <div class="form-row">
+                    <p class="question-title">What is your favourite food?</p>
+                    <div class="option-row">
+                        <label><input type="radio" name="food" value="Pizza">Pizza</label>
+                        <label><input type="radio" name="food" value="Burger">Burger</label>
+                        <label><input type="radio" name="food" value="Biryani">Biryani</label>
+                        <label><input type="radio" name="food" value="Dosa">Dosa</label>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <p class="question-title">What do you prefer?</p>
+                    <div class="option-row">
+                        <label><input type="radio" name="preference" value="Veg">Vegetarian</label>
+                        <label><input type="radio" name="preference" value="Non-Veg">Non-Vegetarian</label>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <p class="question-title">Which cuisines do you like?</p>
+                    <div class="option-row">
+                        <label><input type="checkbox" name="cuisine" value="Indian">Indian</label>
+                        <label><input type="checkbox" name="cuisine" value="Chinese">Chinese</label>
+                        <label><input type="checkbox" name="cuisine" value="Italian">Italian</label>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label for="frequency">How often do you eat outside?</label>
+                    <select id="frequency" name="frequency">
+                        <option>Daily</option>
+                        <option>Weekly</option>
+                        <option>Monthly</option>
+                        <option>Rarely</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="suggestions">Any suggestions?</label>
+                    <textarea id="suggestions" name="suggestions" rows="4"></textarea>
+                </div>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+
+            <p class="form-note">This is a practice project. The form is not connected to a database, so answers are not saved.</p>
+        </section>
+    </main>
+</body>
+</html>
